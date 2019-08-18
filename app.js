@@ -483,8 +483,8 @@ app.post('/upload', type, (req, res) => {
 //     console.log("on 3000");
 // });
 
-http.listen(process.env.PORT || 3000, function(){
-  console.log('listening on', http.address().port);
+app.listen(process.env.PORT || 3000, function(){
+  console.log('listening');
 });
 
 // try {
