@@ -51,6 +51,10 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
+app.get("/",(req,res)=>{
+  res.send("success");
+})
+
 app.post('/upload', type, (req, res) => {
     // console.log('inside', req.files);
     console.log('inside1', req.file);
